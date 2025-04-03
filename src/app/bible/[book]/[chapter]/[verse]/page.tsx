@@ -11,9 +11,16 @@ interface Params {
 }
 
 const Page = async({ params }: Params) => {
-  const { book, chapter, verse } = params;
+  const { book, chapter, verse } = await params;
   const key = `${book}${chapter}:${verse}`;
   const verseText = key
+
+  // const a = Object.keys(bibleData).map((x,i)=>{
+  //   if (key == x){
+  //     console.log(x)
+  //   }
+  // })
+  // console.log(Object.keys(bibleData))
 
   // url의 json 키값과 매핑하여 컴포넌트에 전달
   console.log('Keys =',decodeURIComponent(key))
