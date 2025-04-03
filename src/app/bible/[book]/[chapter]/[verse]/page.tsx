@@ -10,6 +10,16 @@ import { ClientBible } from "@/components/bible/ClientBible";
 //   };
 // }
 
+export async function generateStaticParams() {
+  return Object.keys(bibleData).map((key) => {
+    const match = key.match(/^([가-힣]+)(\d+):(\d+)$/);
+    if (!match) return null;
+
+    const [, book, chapter, verse] = match;
+    return { book, chapter, verse };
+  }).filter(Boolean);
+}
+
 const Page = () => {
   // const { book, chapter, verse } = await params;
   // const key = `${book}${chapter}:${verse}`;
