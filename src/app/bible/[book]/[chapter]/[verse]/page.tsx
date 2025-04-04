@@ -24,19 +24,12 @@ const Page = async ({ params }: Params) => {
     }
   });
   // console.log(Object.keys(bibleData));
-
+  console.log(book, chapter, verse);
   // url의 json 키값과 매핑하여 컴포넌트에 전달
   // console.log('Keys =',decodeURIComponent(key))
 
   // return <ClientBible text={decodeURIComponent(verseText)}/>
-  return (
-    <div>
-      {a}
-      {decodeBook}
-      {chapter}
-      {verse}
-    </div>
-  );
+  return <div>{a}</div>;
 };
 
 export default Page;
