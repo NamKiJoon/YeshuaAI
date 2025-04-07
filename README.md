@@ -47,41 +47,20 @@ yarn dev
 
 yarn build
 
-# PM2로 앱 실행 (항상 켜짐)
+## 사용한 오픈소스
 
-pm2 start "yarn start" --name next-app
+- Next.js
 
-# 서버 재시작 시 자동 실행 설정
+- Tailwind CSS
 
-pm2 save
-pm2 startup
+- shadcn/ui
 
-# 폴더 구조
+- Korean Bible JSON (성경 구절 데이터)
 
-src/
-├── app/
-│ ├── page.tsx # 메인 페이지 (기능 선택 화면)
-│ ├── handwriting/page.tsx # 말씀 필사 도우미
-│ └── bible/[book]/[chapter]/[verse]/ # 성경 구절별 페이지
-├── components/
-│ ├── common/ # Header, Footer 등 공통 UI 컴포넌트
-│ └── handwriting/HandwritingHelper.tsx # 필사 UI 구성 컴포넌트
-├── data/
-│ └── bible.json # 성경 전체 구절 데이터 (key-value 형식)
-└── styles/, public/ 등
+## 소개
 
-개발자: jerry
+- 개발자: jerry
 
-📧 이메일: swms456@gmail.com
+- 이메일: swms456@gmail.com
 
-🔗 GitHub: https://github.com/NamKiJoon/YeshuaAI.git
-
-# 사용한 오픈소스
-
-Next.js
-
-Tailwind CSS
-
-shadcn/ui
-
-Korean Bible JSON (성경 구절 데이터)
+- GitHub: https://github.com/NamKiJoon/YeshuaAI.git
