@@ -1,4 +1,4 @@
-# ✝️ Yeshua Bible Tools
+# Yeshua Bible Tools
 
 **Yeshua Bible Tools**는 [Next.js](https://nextjs.org)를 기반으로 제작된 성경 웹 애플리케이션입니다.  
 사용자가 구절을 빠르게 검색하고, 필사하며, 말씀을 묵상할 수 있도록 돕는 **신앙 중심 도구**입니다.
