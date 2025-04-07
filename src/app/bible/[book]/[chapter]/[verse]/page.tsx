@@ -1,6 +1,4 @@
 import bibleData from "@/data/bible.json";
-import { notFound } from "next/navigation";
-import { ClientBible } from "@/components/bible/ClientBible";
 
 interface Params {
   params: {
