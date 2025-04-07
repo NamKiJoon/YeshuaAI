@@ -43,9 +43,13 @@ yarn install
 yarn dev
 ```
 
+---
+
 # 프로덕션 빌드
 
 yarn build
+
+---
 
 ## 사용한 오픈소스
 
@@ -56,6 +60,8 @@ yarn build
 - shadcn/ui
 
 - Korean Bible JSON (성경 구절 데이터)
+
+---
 
 ## 소개
 
