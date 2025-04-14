@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import bibleData from "@/data/bible.json";
-import { bibleMeta, BibleBookMeta } from "@/data/bibleMeta";
 import { getSearch } from "@/utils/search/getSearch";
 
 export const SelectBible = () => {
