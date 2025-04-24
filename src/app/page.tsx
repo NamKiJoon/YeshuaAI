@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <main className="max-w-xl mx-auto py-16 px-6 space-y-8">
       <section>
-        <h1 className="text-3xl font-bold mb-2">Yeshua Bible Tools</h1>
+        <h1 className="text-3xl font-bold mb-2">Yeshua Tools</h1>
         <p className="text-muted-foreground">
-          예수님의 말씀을 더 쉽고 깊이 있게 접할 수 있도록 돕는 도구들입니다.
+          말씀을 더 쉽고 깊이 있게 접할 수 있도록 돕는 도구들입니다.
         </p>
       </section>
 

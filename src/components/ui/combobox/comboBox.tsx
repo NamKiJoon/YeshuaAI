@@ -33,7 +33,29 @@ export function BookCombobox() {
   React.useEffect(() => {
     console.log(bibleArr);
   }, []);
-
+  const frameworks = [
+    {
+      value: "next.js",
+      label: "Next.js",
+    },
+    {
+      value: "sveltekit",
+      label: "SvelteKit",
+    },
+    {
+      value: "nuxt.js",
+      label: "Nuxt.js",
+    },
+    {
+      value: "remix",
+      label: "Remix",
+    },
+    {
+      value: "astro",
+      label: "Astro",
+    },
+  ];
+  const [value, setValue] = React.useState("");
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
@@ -42,6 +64,9 @@ export function BookCombobox() {
           role="combobox"
           aria-expanded={open}
         >
+          {value
+            ? frameworks.find((framework) => framework.value === value)?.label
+            : "Select framework..."}
           <p className="flex items-center justify-between w-full">
             <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
           </p>
